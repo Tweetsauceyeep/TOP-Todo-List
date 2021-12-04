@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/createTodo.js":
-/*!***************************!*\
-  !*** ./src/createTodo.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ CreateTodo)\n/* harmony export */ });\nfunction CreateTodo(title, description, dueDate, priority) {\n  \n  return {title, description, dueDate, priority};\n}\n\n\n\n//# sourceURL=webpack://top-todo-list/./src/createTodo.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _createTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createTodo.js */ \"./src/createTodo.js\");\n\nconsole.log('check if work bro')\n\nlet content = document.querySelector('#content')\n\nlet test = (0,_createTodo_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('arara','daniel', 'poo', 'L')\n\ncontent.innerHTML = test.title\n\n\n//# sourceURL=webpack://top-todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/createTodo.js */ \"./src/modules/createTodo.js\");\n\nconsole.log('check if work bro')\n\nlet content = document.querySelector('#content')\n\nlet test = (0,_modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('Do me','daniel', 'poo', 'L')\n\ncontent.innerHTML = test.title\n\n\n//# sourceURL=webpack://top-todo-list/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/createTodo.js":
+/*!***********************************!*\
+  !*** ./src/modules/createTodo.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ CreateTodo)\n/* harmony export */ });\nfunction CreateTodo(title, description, dueDate, priority) {\n  \n  return {title, description, dueDate, priority};\n}\n\n\n\n//# sourceURL=webpack://top-todo-list/./src/modules/createTodo.js?");
 
 /***/ })
 
