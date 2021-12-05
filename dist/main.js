@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/createTodo.js */ \"./src/modules/createTodo.js\");\n\nconsole.log('check if work bro')\n\nlet content = document.querySelector('#content')\n\nlet test = (0,_modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('Do me','daniel', 'poo', 'L')\n\ncontent.innerHTML = test.title\n\n\n//# sourceURL=webpack://top-todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/createTodo.js */ \"./src/modules/createTodo.js\");\n/* harmony import */ var _modules_displayTodo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/displayTodo */ \"./src/modules/displayTodo.js\");\n\n\n\n\n\nlet content = document.querySelector('#content');\nlet form = document.querySelector('#inputform')\nlet submitButton = document.querySelector('#formsubmit')\n\nlet sampleObj = (0,_modules_createTodo_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('Do english Reqs', 'Make Essay', '10/21/21', 'URGENT')\n\nlet bruh =(0,_modules_displayTodo__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(form)\nconsole.log(bruh)\n\n\n\n//# sourceURL=webpack://top-todo-list/./src/index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ CreateTodo)\n/* harmony export */ });\nfunction CreateTodo(title, description, dueDate, priority) {\n  \n  return {title, description, dueDate, priority};\n}\n\n\n\n//# sourceURL=webpack://top-todo-list/./src/modules/createTodo.js?");
+
+/***/ }),
+
+/***/ "./src/modules/displayTodo.js":
+/*!************************************!*\
+  !*** ./src/modules/displayTodo.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction displayTodo(todoItems) {\n  // convert todo object into an array and iterate through it\n  // create a new div and append todo item divs to it and append it to main note div\n  const todoItem = Object.values(todoItems)\n  const div = document.createElement('div');\n  div.classList.add('todoNote')  \n  for (let i = 0; i < todoItem.length; i++) {\n    div.appendChild(createDiv(todoItem[i]));\n  }\n\n  return div\n}\n\nfunction createDiv(innards) {\n  const divThing = document.createElement('div');\n  divThing.classList.add('todoItem')\n  divThing.textContent = innards;\n  return divThing\n}\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayTodo);\n\n\n//# sourceURL=webpack://top-todo-list/./src/modules/displayTodo.js?");
 
 /***/ })
 
