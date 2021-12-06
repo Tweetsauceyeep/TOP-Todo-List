@@ -1,0 +1,13 @@
+.todoNote {
+  max-width: 600px;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.todoItem {
+  display: inline;
+  padding: 10px;
+}

@@ -8,8 +8,8 @@ function displayTodo(todoItems) {
   div.classList.add('todoNote')  
   for (let i = 0; i < todoItem.length; i++) {
     div.appendChild(createDiv(todoItem[i]));
-
   }
+  
   return div
 }
 
@@ -20,6 +20,10 @@ function createDiv(innards) {
   return divThing
 }
 
+function createButton(){
+  const button = document.createElement('button')
+  button.classList.add('deletebutton')
+}
 
 
 export default displayTodo;
