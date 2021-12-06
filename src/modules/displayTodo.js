@@ -1,3 +1,5 @@
+import '../styles.css'
+
 function displayTodo(todoItems) {
   // convert todo object into an array and iterate through it
   // create a new div and append todo item divs to it and append it to main note div
