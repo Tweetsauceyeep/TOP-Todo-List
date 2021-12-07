@@ -1,4 +1,5 @@
 import '../styles.css'
+import deleteTodo from './deleteTodo.js'
 
 
 function displayTodo(todoItemsNote) {
