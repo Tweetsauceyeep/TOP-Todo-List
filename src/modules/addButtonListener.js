@@ -1,3 +1,4 @@
+// bruh this literally breaks my code no joke bruh idk why but yeah pretty much
 function addButtonListener(
   button,
   typeOfListener,
@@ -6,8 +7,9 @@ function addButtonListener(
   form,
 ) {
   button.addEventListener(typeOfListener, () => {
-    contentDiv.appendChild(functions);
-    form.reset();
+    contentDiv.append(functions);
+    
+    console.log('hello')
   });
 }
 
