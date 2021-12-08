@@ -6,6 +6,7 @@ function displayTodo(todoItemsNote) {
   // convert todo object into an array and iterate through it
   // create a new div and append todo item divs to it and append it to main note div
   let todoItem = Object.values(todoItemsNote)
+  console.log(todoItem)
   let div = document.createElement('div');
   div.classList.add('todoNote')  
   for (let i = 0; i < todoItem.length; i++) {
