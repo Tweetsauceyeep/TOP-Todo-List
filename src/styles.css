@@ -12,6 +12,6 @@
   padding: 10px;
 }
 
-.deletebutton {
- /*css sucks*/
-} 
+.invisibleDiv {
+  display:none;
+}
